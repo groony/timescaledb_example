@@ -1,0 +1,10 @@
+version: '3'
+services:
+  timescale:
+    image: timescale/timescaledb
+    ports:
+      - 8889:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:
